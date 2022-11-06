@@ -1,0 +1,122 @@
+
+body {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 88%;
+  background-color: rgb(56, 82, 120);
+  align-items: center;
+  font-family: 'Trispace', sans-serif;
+  font-weight: bold;
+  margin-bottom: 300px;
+}
+h1, h2 {
+  color: white;
+}
+
+input {
+  width: 98.5%;
+  padding: 12px;
+  border-radius: 7px;
+  color: white;
+  background-color: rgb(45, 54, 75);
+  margin-bottom: 17px;
+  margin-right: 28px;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.20);
+  font-size: 17px;
+  font-family: 'Trispace', sans-serif;
+  font-weight: bold;
+  
+  border: none;
+}
+
+input:focus {
+
+  border-color: blue;
+  transform: scale(1.1);
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 15px;
+  margin-bottom: 18px;
+  box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.20);
+  border: none;
+  font-size: 18px;
+  font-family: 'Trispace', sans-serif;
+  font-weight: bold;
+  background-color: rgb(205, 241, 241);
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+button:hover {
+  background-color: rgb(166, 220, 220);
+  letter-spacing: 1.5px;
+}
+
+.input-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 35px;
+}
+
+.title-input {
+  margin-bottom: 0;
+}
+
+.price-div {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: baseline;
+}
+
+.total-tag {
+  color: white;
+  margin-top: 0;
+  margin-bottom: 0px;
+  margin-right: 25px;
+  margin-left: 10px;
+  background-color: rgb(166, 49, 49);
+  padding: 8px;
+  font-size: 19px;
+}
+
+.search-buttons-div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-buttons-div button {
+  width: 42%;
+}
+
+table {
+  color: white;
+  width: 100%;
+  font-size: 20px;
+}
+
+td {  
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.update-button, .delete-button {
+  margin-top: 20px;
+  padding: 10px;
+  width: 75%;
+}
+
+.update-button:hover , .delete-button:hover {
+  letter-spacing: 0px;
+  transform: scale(1.1);
+}
+
+.delete-all-span {
+  color: rgb(226, 131, 14);
+}

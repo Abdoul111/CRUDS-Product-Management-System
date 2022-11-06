@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>CRUDS Product Management System</title>
+    <link rel="stylesheet" href="design.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>CRUDS</h1>
+    <h2>PRODUCT MANAGEMENT SYSTEM</h2>
+    <div class="input-div">
+      <input id="title-input" type="text" placeholder="Title*">
+      <div class="price-div">
+        <input onkeyup="getTotal()" id="price-input" type="number" placeholder="Price*">
+        <input onkeyup="getTotal()" id="tax-input" type="number" placeholder="Tax %">
+        <input onkeyup="getTotal()" id="discount-input" type="number" placeholder="Discount">
+        <p id="total-tag" class="total-tag">Total:<span id="total-value"></span></p>
+      </div>
+      <input id="count-input" type="number" placeholder="Count">
+      <input id="category-input" type="text" placeholder="Category*">
+      <button id="create-button" class="create-button">Create</button>
+      <input id="search-input" type="text" placeholder="Search" onkeyup="searchEmpty()" >
+      
+      <div class="search-buttons-div">
+        <button id="search-title-button">Search By Title</button>
+        <button id="search-category-button">Search By Category</button>
+      </div>
+
+      <button id="deleteAll-button">Delete All (<span id="delete-all-span" class="delete-all-span"> items</span>)</button>
+    </div>
+
+    <table  class="main-table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>TITLE</th>
+          <th>PRICE</th>
+          <th>TAX</th>
+          <th>DISCOUNT</th>
+          <th>TOTAL</th>
+          <th>COUNT</th>
+          <th>CATEGORY</th>
+          <th>UPDATE</th>
+          <th>DELETE</th>
+        </tr>
+      </thead>
+      <tbody id="main-table">
+
+      </tbody>
+
+    </table>
+
+    <script src="code.js"></script>
+  </body>
+</html>
